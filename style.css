@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Helvetica", sans-serif;
+}
+/*This block of code is what helps change the background color as well as the height and width. It also has display and the position of the code in the body.*/
+body {
+  background-color: purple;
+  height:100vh;
+  width: 100vh;
+  display:block;
+  position:relative;
+}
+/*Wrapper is the div name and everything under is chnaging the style of that block of code.*/
+.wrapper{
+  display:block;
+  background-color:purple;
+  width:600px;
+  height:600px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding:4px;
+  outline:beige solid, 7px;
+  outline-offset:-15px;
+  overflow:hidden;
+}
+/*This block of code is what helps change everything in the div class with the name section_userform changing the width, the way it's  displayed, the margin, and the color.*/
+.section_userform{
+  width:75%;
+  display:block;
+  margin: 0 auto;
+  color:beige;
+}
+/* This styles the div class that has the name of input_label changing the width, the aligning, font size, and color. */
+.input_label{
+  width:35%;
+  test-align:right;
+  font-size:1.5em;
+  color:beige;
+}
+/* This styles the div class with the name break changing the display, the width, and margin.  */
+.break{
+  display:block;
+  width:100%;
+  margin:2em 0;
+}
+/* This styles the div class with the name textbox changing the height, the width, box-sizing, background color, border color, padding, and color. */
+.textbox{
+  width:50%;
+  height:1.8em;
+  box-sizing:content-box;
+  background-color:black;
+  border-color:beige;
+  padding-left:1em;
+  color:white;
+}
+/* This styles the div class with the name button changing the display, the margin, the padding, text transform, background color, border color, font size, border width, border radius, border style, padding, and color. */
+.button{
+  display:block;
+  margin:none;
+  padding:0.5em 2.5em;
+  text-transform:uppercase;
+  background-color:lightpurp;
+   border-color:beige;
+  font-size:1.3em;
+  border-width:3px;
+  border-radius:3px;
+  border-style:ridge;
+  padding-left:1em;
+  color:black;
+}
+/* This styles the div class with the name button only when hovering changing the background color, the color, the border color, and the transformation. */
+.button:hover{
+  background-color: black;
+  color:white;
+  border-color:beige;
+  transform:scale(1.05);
+}
+/* This is styling the div class with the name buttonwrapper changing the display and justifiying the content. */
+.buttonwrapper{
+  display:grid;
+  justify-content:center;
+}
+/* This is styling the div class with the name section_info changing the text alignment, margin, and color. */
+.section_info{
+  text-align:center;
+  margin:1em;
+  color:white;
+}
+/* This is styling the header in the div class section_info which is only changing the font size. */
+.section_info h1{
+  font-size:5em;
+}
+/* s */
+#line{
+  border-color:black;
+  width:80%;
+  margin-bottom:4em;
+}
+.result{
+  width:45%;
+  text-align:left;
+  display:inline-block;
+  font-size:1.5em;
+  color:white;
+}
+.result_label{
+  width:40%;
+  text-align:right;
+  display:inline-block;
+  font-size:1.5em;
+  color:yellow;
+}
+#before{
+  opacity:1;
+  display:block;
+}
+#after{
+  display:none;
+  opacity:0;
+}
+#input_username_button:focus #after{
+  display:block;
+  opacity:1;
+}
+#goback{
+  margin-top:4em;
+}
+#input_username_button:focus #before{
+  display:hidden;
+  opacity:0;
+  z-index:-1;
+  position:absolute;
+  top:800px;
+}
